@@ -85,16 +85,7 @@ creative-items:
   enabled: true
 
 restrictions:
-  enabled: false
+  enabled: true
   # What TuffClient modules are not allowed
   disallow:
-    - quickelytra
-    - fastcrystals
-    - hotbar_switcher
-    - fullbright
-    - tnt
-    - antipickup
-    - zoom
-    - glowingores
-    - rangecrosshair
-    - minimap
+    - clientbrand
