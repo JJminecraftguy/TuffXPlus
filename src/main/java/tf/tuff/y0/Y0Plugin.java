@@ -6,6 +6,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.*;
 import java.util.function.Consumer;
@@ -39,7 +40,7 @@ public class Y0Plugin {
     public static final String CH = "eagler:below_y0";
     public ViaBlockIds v;
     
-    private final ObjectOpenHashSet<UUID> aib = new ObjectOpenHashSet<>();
+    private final Set<UUID> aib = ConcurrentHashMap.newKeySet();
     private ObjectOpenHashSet<String> ew;
     private volatile Cache<WCK, ObjectArrayList<byte[]>> cc;
     private volatile Cache<WCK, byte[]> ccCombined;
