@@ -18,14 +18,14 @@ import tf.tuff.tuffactions.TuffActionBase;
 import tf.tuff.tuffactions.TuffActions;
 
 public class Restrictions extends TuffActionBase {
-    private RestrictionsCommand commandHandler;
+	private RestrictionsCommand commandHandler;
 	private Set<String> disallowed = ConcurrentHashMap.newKeySet();
 
 	private static final List<String> example = List.of("clientbrand");
 
 	public Restrictions(TuffActions actsPlugin) {
 		super(actsPlugin, "Restrictions", "restrictions", true);
-        this.commandHandler = new RestrictionsCommand(this, plugin);
+		this.commandHandler = new RestrictionsCommand(this, plugin);
 		plugin.getConfig().addDefault("restrictions.disallow", example);
 	}
 
