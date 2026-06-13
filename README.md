@@ -38,7 +38,7 @@ PacketEvents, Jackson, and WebSocket libraries are shaded into the jar.
 - `/viablocks get` - give a set of custom blocks (creative)
 - `/viablocks refresh` - resend ViaBlocks data in view distance
 - `/restrictions disallow` - add a module to the disallow list and send an update to all TuffClient clients
-- `/restrictions allow` - remove a module from the disallow list and send an update
+- `/restrictions allow` - remove module from the disallow list and send an update
 
 ## Permissions
 - `tuffx.reload`
